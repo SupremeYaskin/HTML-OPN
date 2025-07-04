@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      width: 320px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #4a90e2;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #4a90e2;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #2c5aa0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pravatar.cc/150?img=47" alt="Profile Image" class="profile-img" />
+    <h1>Edric Barnwal</h1>
+    <p>Web Developer • Designer • Dreamer</p>
+    <div class="social-icons">
+      <a href="#" target="_blank">🌐</a>
+      <a href="#" target="_blank">📷</a>
+      <a href="#" target="_blank">💼</a>
+    </div>
+  </div>
+</body>
+</html>
